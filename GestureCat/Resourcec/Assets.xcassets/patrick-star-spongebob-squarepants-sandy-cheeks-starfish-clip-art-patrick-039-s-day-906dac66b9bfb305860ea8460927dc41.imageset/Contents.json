@@ -1,0 +1,21 @@
+{
+  "images" : [
+    {
+      "filename" : "patrick-star-spongebob-squarepants-sandy-cheeks-starfish-clip-art-patrick-039-s-day-906dac66b9bfb305860ea8460927dc41.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
