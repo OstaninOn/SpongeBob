@@ -232,9 +232,16 @@ class GamesViewController: UIViewController {
        
           let alert = UIAlertController(title: "GAME OVER", message: "saving", preferredStyle: .alert)
             
-    guard let viewBack = storyboard?.instantiateViewController(withIdentifier: "transition") else { return }
-          let okButton = UIAlertAction(title: "OK", style: .default, handler: { [self]_ in self.navigationController?.pushViewController(viewBack, animated: true)
+            
+//            let viewBack = self.storyboard!.instantiateViewController(withIdentifier: "transition") as! TitleViewController
+//            let okButton = UIAlertAction(title: "OK", style: .destructive, handler: { [self]_ in self.navigationController?.pushViewController(viewBack, animated: true)
+//            })
+            
+            
+            let okButton = UIAlertAction(title: "OK", style: .destructive, handler: { (action: UIAlertAction!) in
+                self.navigationController?.popToRootViewController(animated: true)
             })
+            
             
             alert.addAction(okButton)
             self.present(alert, animated: true, completion: nil)

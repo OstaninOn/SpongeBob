@@ -33,26 +33,30 @@ class TitleViewController: UIViewController {
         gradientTopRecord.colors = [UIColor.magenta.cgColor,UIColor.systemYellow.cgColor,]
         gradientTopRecord.frame = TopRecord.bounds
         TopRecord.layer.insertSublayer(gradientTopRecord, at: 0)
-        TopRecord.layer.cornerRadius = 17
+        TopRecord.layer.cornerRadius = 25
         TopRecord.layer.masksToBounds = true
-        TopRecord.layer.borderWidth = 1
+        //TopRecord.layer.borderWidth = 1
+
         
         let gradientStartTitle = CAGradientLayer()
         gradientStartTitle.colors = [UIColor.systemTeal.cgColor,UIColor.systemGreen.cgColor,]
         gradientStartTitle.frame = StartTitle.bounds
         StartTitle.layer.insertSublayer(gradientStartTitle, at: 0)
-        StartTitle.layer.cornerRadius = 17
+        StartTitle.layer.cornerRadius = 25
         StartTitle.layer.masksToBounds = true
-        StartTitle.layer.borderWidth = 1
+        //StartTitle.layer.borderWidth = 1
         
         
         let gradientSettings = CAGradientLayer()
         gradientSettings.colors = [UIColor.systemFill.cgColor,UIColor.systemRed.cgColor,]
         gradientSettings.frame = Settings.bounds
         Settings.layer.insertSublayer(gradientSettings, at: 0)
-        Settings.layer.cornerRadius = 17
+        Settings.layer.cornerRadius = 25
         Settings.layer.masksToBounds = true
-        Settings.layer.borderWidth = 1
+        //Settings.layer.borderWidth = 1
+        
+        
+        
         
         let gradientView = CAGradientLayer()
         gradientView.colors = [UIColor.black.cgColor,UIColor.systemPink.cgColor]
@@ -73,7 +77,11 @@ class TitleViewController: UIViewController {
         itemBehaviour.elasticity = 1.05
         animator.addBehavior(itemBehaviour)
         movie()
+        
+        //Settings.startButton()
+        
     }
+    
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
@@ -87,6 +95,7 @@ class TitleViewController: UIViewController {
         }
     }
     
+    
     func movie() {
         
         let alpha = catDinaic.alpha
@@ -94,9 +103,9 @@ class TitleViewController: UIViewController {
         let transform = catDinaic.transform
         
         UIView.animate(withDuration: 3, animations: {
-            self.catDinaic.alpha = 2
-            self.catDinaic.center = CGPoint(x: 500, y: 900)
-            self.catDinaic.transform = CGAffineTransform(scaleX: 1.0, y: 9.0)
+            self.catDinaic.alpha = 1
+            self.catDinaic.center = CGPoint(x: -200, y: 800)
+            self.catDinaic.transform = CGAffineTransform(scaleX: 1, y: 1)
         }) { (isFinished) in
             if isFinished {
                 self.catDinaic.alpha = alpha
@@ -148,3 +157,17 @@ class TitleViewController: UIViewController {
         
     }
 }
+
+
+//extension UIButton {
+//    func startButton() {
+//        self.backgroundColor = UIColor.darkGray
+//        self.layer.cornerRadius = self.frame.height / 2
+//        //self.layer.setTitleColor(UIColor.white, for: .normal)
+//        self.layer.shadowColor = UIColor.darkGray.cgColor
+//        self.layer.shadowRadius = 4
+//        self.layer.shadowOpacity = 1
+//        self.layer.shadowOffset = CGSize(width: 0, height: 0)
+//                
+//    }
+//}
