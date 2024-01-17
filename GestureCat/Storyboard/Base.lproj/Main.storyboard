@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="l49-qS-A8h">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="l49-qS-A8h">
     <device id="retina6_0" orientation="portrait" appearance="dark"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -66,6 +67,7 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="RTQ-lD-qfZ" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="45" id="09J-z7-QR5"/>
                             <constraint firstItem="zwp-y8-wZ7" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="1lk-7g-nH5"/>
@@ -82,7 +84,8 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="RKo-aO-yCj" secondAttribute="bottom" constant="173" id="uPe-od-4V7"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="Nma-Wj-e7F"/>
+                    <navigationItem key="navigationItem" style="editor" customizationIdentifier="" id="Nma-Wj-e7F"/>
+                    <nil key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="RezultLebel" destination="E9p-9h-elz" id="xUN-TF-bNf"/>
                         <outlet property="ScoreLebel" destination="RTQ-lD-qfZ" id="Txj-e8-Mvz"/>
@@ -128,14 +131,25 @@
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="230" id="0TW-CH-Yro"/>
                                     <constraint firstAttribute="height" constant="55" id="4ZU-zp-5Vy"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="32"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" title="Start"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Start">
-                                    <fontDescription key="titleFontDescription" name="Futura-Bold" family="Futura" pointSize="32"/>
-                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </buttonConfiguration>
+                                <size key="titleShadowOffset" width="4" height="0.0"/>
+                                <state key="normal" title="Start">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="layer.shadowOffset">
+                                        <size key="value" width="3" height="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.shadoeOpasity">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" identifier="" id="x48-c8-iQM"/>
+                                    <segue destination="BYZ-38-t0r" kind="push" identifier="" id="x48-c8-iQM"/>
                                 </connections>
                             </button>
                             <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M1e-Vq-RRV" userLabel="top record">
@@ -162,8 +176,11 @@
                                     <fontDescription key="titleFontDescription" name="Futura-Bold" family="Futura" pointSize="32"/>
                                     <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer." value="YES"/>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <segue destination="dTv-fi-GHo" kind="show" id="iWM-fJ-42U"/>
+                                    <segue destination="dTv-fi-GHo" kind="show" animates="NO" id="iWM-fJ-42U"/>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="imgbin_patrick-star-png" translatesAutoresizingMaskIntoConstraints="NO" id="oiL-A5-Zjg">
@@ -187,6 +204,7 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="9eZ-bb-P0u"/>
+                    <nil key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="BackgroundImage" destination="WST-Ne-svI" id="Zgy-MS-cLC"/>
                         <outlet property="Settings" destination="cjy-8A-eXk" id="8r7-4x-qcn"/>
