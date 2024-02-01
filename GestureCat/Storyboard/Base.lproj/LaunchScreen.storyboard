@@ -12,16 +12,15 @@
         <scene sceneID="EHf-IW-A2E">
             <objects>
                 <viewController id="01J-lp-oVM" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                    <view key="view" clipsSubviews="YES" contentMode="scaleAspectFit" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BOB ESPONJA AL RESCATE" translatesAutoresizingMaskIntoConstraints="NO" id="7tp-AW-9Pg">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="64516-1080x1920-spongebob-wallpaper-image-phone-hd" translatesAutoresizingMaskIntoConstraints="NO" id="7tp-AW-9Pg">
                                 <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="7tp-AW-9Pg" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="3VO-Of-cTg"/>
                             <constraint firstAttribute="trailing" secondItem="7tp-AW-9Pg" secondAttribute="trailing" id="F4y-1n-E2F"/>
@@ -36,6 +35,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="BOB ESPONJA AL RESCATE" width="512" height="512"/>
+        <image name="64516-1080x1920-spongebob-wallpaper-image-phone-hd" width="1080" height="1920"/>
     </resources>
 </document>

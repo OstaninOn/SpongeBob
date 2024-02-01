@@ -28,4 +28,44 @@ class MusicSound {
             } catch {
         }
     }
+    
+    func playSoundTitle() {
+        guard isOn else { return }
+        
+        let aSound = NSURL(fileURLWithPath: Bundle.main.path(forResource: "button", ofType: "mp3")!)
+        do {
+            audioPlayer = try AVAudioPlayer(contentsOf:aSound as URL)
+            audioPlayer!.numberOfLoops = 0
+            audioPlayer!.prepareToPlay()
+            audioPlayer!.play()
+            } catch {
+        }
+    }
+    
+    func playGameOver() {
+        guard isOn else { return }
+        
+        let aSound = NSURL(fileURLWithPath: Bundle.main.path(forResource: "over", ofType: "mp3")!)
+        do {
+            audioPlayer = try AVAudioPlayer(contentsOf:aSound as URL)
+            audioPlayer!.numberOfLoops = 0
+            audioPlayer!.prepareToPlay()
+            audioPlayer!.play()
+            } catch {
+        }
+    }
+    
+//    func playMusicGame() {
+//        guard isOn else { return }
+//        
+//        let aSound = NSURL(fileURLWithPath: Bundle.main.path(forResource: "musicGame", ofType: "mp3")!)
+//        do {
+//            audioPlayer = try AVAudioPlayer(contentsOf:aSound as URL)
+//            audioPlayer!.numberOfLoops = 0
+//            audioPlayer!.prepareToPlay()
+//            audioPlayer!.play()
+//            } catch {
+//        }
+//    }
+    
 }
