@@ -1,8 +1,10 @@
 import UIKit
 import AVFoundation
+import Lottie
 
 class GamesViewController: UIViewController {
     
+    @IBOutlet weak var viewGameOver: UIView!
     //var audioPlayer = AVAudioPlayer()
     
     // MARK: - Private properties
@@ -60,6 +62,11 @@ class GamesViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //MusicSound.shared.playMusicGame()
+        MusicHelper.shared.stopBackgroundMusic()
+        //MusicHelper.shared.audioPlayer.currentTime = 0
+        MusicHelper.sharedGame.playBackgroundMusicGame()
         
         view.addSubview(imageView)
         imageView.frame = CGRect(x: 30, y: -100, width: 50, height: 50)
@@ -201,7 +208,7 @@ class GamesViewController: UIViewController {
         intersectsimageBurgerFirst()
         intersectsBurgerSecond()
         
-        setupVisualEffectView()
+//        setupVisualEffectView()
         
         RezultLebel.text = String(rezult)
         ScoreLebel.text = String(score)
@@ -224,12 +231,14 @@ class GamesViewController: UIViewController {
             imageBurger2.layer.removeAllAnimations()
             isGaming = false
             saveRecord()
-            MusicHelper.shared.stopBackgroundMusic()
-            MusicHelper.shared.audioPlayer.currentTime = 0
+//            MusicHelper.shared.stopBackgroundMusic()
+//            MusicHelper.shared.audioPlayer.currentTime = 0
             
   // ВИБРО
             AudioServicesPlaySystemSound(SystemSoundID(4095))
-       
+            MusicSound.shared.playGameOver()
+            
+            
           let alert = UIAlertController(title: "GAME OVER", message: "saving", preferredStyle: .alert)
             
             
@@ -237,20 +246,36 @@ class GamesViewController: UIViewController {
 //            let okButton = UIAlertAction(title: "OK", style: .destructive, handler: { [self]_ in self.navigationController?.pushViewController(viewBack, animated: true)
 //            })
             
-            
+            MusicHelper.sharedGame.stopBackgroundMusicGame()
             let okButton = UIAlertAction(title: "OK", style: .destructive, handler: { (action: UIAlertAction!) in
                 self.navigationController?.popToRootViewController(animated: true)
+                MusicHelper.shared.playBackgroundMusic()
             })
             
             
             alert.addAction(okButton)
             self.present(alert, animated: true, completion: nil)
+            
+            setupVisualEffectView()
+            addAnimeSpider()
         }
+        
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
             self.intersects()
         }
     }
+    
+    
+    func addAnimeSpider() {
+        let animeLoadView = LottieAnimationView(name: "89")
+        animeLoadView.contentMode = .scaleAspectFill
+        animeLoadView.frame = self.viewGameOver.bounds
+        animeLoadView.loopMode = .loop
+        animeLoadView.play()
+        self.viewGameOver.addSubview(animeLoadView)
+    }
+    
 
     func saveRecord() {
         
@@ -409,7 +434,7 @@ class GamesViewController: UIViewController {
     
     func animateIn() {
         UIView.animate(withDuration: 2) {
-            self.visualEffectView.alpha = 0.7
+            self.visualEffectView.alpha = 0.5
             
         }
         

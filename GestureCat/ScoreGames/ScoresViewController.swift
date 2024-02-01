@@ -57,6 +57,7 @@ extension ScoresViewController: UITableViewDelegate, UITableViewDataSource {
         selectedIndex = index
         tableView.deselectRow(at: indexPath, animated: true)
         performSegue(withIdentifier: "openScore", sender: self)
+        MusicSound.shared.playSoundTitle()
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
