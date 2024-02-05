@@ -37,7 +37,7 @@ class TitleViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        MusicHelper.sharedGame.stopBackgroundMusicGame()
         BackgroundImage.makeBlur()
 //        MusicHelper.shared.playBackgroundMusic()
 //        MusicHelper.shared.audioPlayer.currentTime = 0

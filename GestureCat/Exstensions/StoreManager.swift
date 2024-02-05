@@ -11,7 +11,7 @@ class StoreManager {
     
     // MARK: - Singletone
     static var shared = StoreManager()
-    
+    static var sharedGame = StoreManager()
     private init() { }
     
     // MARK: - Public properties
@@ -68,8 +68,25 @@ class StoreManager {
         set {
             storage.set(newValue, forKey: "isMusicOn")
             MusicHelper.shared.isOn = newValue
+            MusicHelper.sharedGame.isOnGame = newValue
+            
         }
     }
+    
+    
+    
+//    var isMusicOnVolume: Bool {
+//        get {
+//            storage.bool(forKey: "isMusicOnVolume")
+//        }
+//        set {
+//            storage.set(newValue, forKey: "isMusicOnVolume")
+////            MusicHelper.shared.isOn = newValue
+////            MusicHelper.sharedGame.isOnGame = newValue
+//            MusicHelper.sharedGame.audioPlayer.volume = newValue
+//            
+//        }
+//    }
     
     // MARK: - Private properties
     let storage = UserDefaults.standard

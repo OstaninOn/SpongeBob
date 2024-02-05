@@ -40,7 +40,7 @@ class MusicHelper {
         }
     }
     
-    var isOnGame = StoreManager.shared.isMusicOn {
+    var isOnGame = StoreManager.sharedGame.isMusicOn {
         didSet {
             if isOnGame {
                 playBackgroundMusicGame()
