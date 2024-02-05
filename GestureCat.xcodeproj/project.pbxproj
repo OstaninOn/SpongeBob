@@ -9,11 +9,18 @@
 /* Begin PBXBuildFile section */
 		1F0CE323290C02610032EDEB /* String+Scores.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0CE322290C02610032EDEB /* String+Scores.swift */; };
 		1F166FA028FFE064004BD2B1 /* BlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F166F9F28FFE064004BD2B1 /* BlurView.swift */; };
+		1F2A847E2B6BFDA700A23170 /* 89.json in Resources */ = {isa = PBXBuildFile; fileRef = 1F2A847D2B6BFDA700A23170 /* 89.json */; };
+		1F2A84802B6C036300A23170 /* MusicHelperGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2A847F2B6C036300A23170 /* MusicHelperGame.swift */; };
+		1F2D52232B585D4D004E562A /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 1F2D52222B585D4D004E562A /* Lottie */; };
 		1F431BD92949F9AD009F09FB /* MusikFon.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1F431BD82949F9AD009F09FB /* MusikFon.mp3 */; };
+		1F5D11732B6BEEBA00661A25 /* button.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1F5D11722B6BEEBA00661A25 /* button.mp3 */; };
+		1F5D11772B6BF7E400661A25 /* over.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1F5D11762B6BF7E300661A25 /* over.mp3 */; };
+		1F5D11792B6BF88100661A25 /* musicGame.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1F5D11782B6BF88100661A25 /* musicGame.mp3 */; };
 		1F6BBDE6292810A5003CEE2B /* ScoresViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F6BBDE5292810A5003CEE2B /* ScoresViewController.swift */; };
 		1F6BBDE9292813C9003CEE2B /* ScoreCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F6BBDE7292813C9003CEE2B /* ScoreCell.swift */; };
 		1F6BBDEC292A4F76003CEE2B /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F6BBDEB292A4F76003CEE2B /* SettingsViewController.swift */; };
 		1F6BBDEE292A5DC0003CEE2B /* ScoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F6BBDED292A5DC0003CEE2B /* ScoreViewController.swift */; };
+		1F7203432B640FA100D48FF2 /* f7ba78d7-b1de-4790-a81e-9d78a42c6731.json in Resources */ = {isa = PBXBuildFile; fileRef = 1F7203422B640FA100D48FF2 /* f7ba78d7-b1de-4790-a81e-9d78a42c6731.json */; };
 		1FA32E06292FD778003BAA03 /* hrums.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1FA32E05292FD778003BAA03 /* hrums.mp3 */; };
 		1FA32E0A29300366003BAA03 /* MusicHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA32E0929300366003BAA03 /* MusicHelper.swift */; };
 		1FA32E0C29300B30003BAA03 /* MusicSound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA32E0B29300B30003BAA03 /* MusicSound.swift */; };
@@ -25,6 +32,8 @@
 		1FCE36F628EAE18A000BFEC4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FCE36F528EAE18A000BFEC4 /* Assets.xcassets */; };
 		1FCE36F928EAE18A000BFEC4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FCE36F728EAE18A000BFEC4 /* LaunchScreen.storyboard */; };
 		1FCE370328EAE2AA000BFEC4 /* TitleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCE370228EAE2AA000BFEC4 /* TitleViewController.swift */; };
+		1FE3FD202B6BBE72008CAE7F /* cup.json in Resources */ = {isa = PBXBuildFile; fileRef = 1FE3FD1F2B6BBE72008CAE7F /* cup.json */; };
+		1FE3FD242B6BC098008CAE7F /* sett.json in Resources */ = {isa = PBXBuildFile; fileRef = 1FE3FD232B6BC098008CAE7F /* sett.json */; };
 		1FF2AD072B3C5437003C9244 /* ScoreCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F431BD32949CA29009F09FB /* ScoreCell.xib */; };
 		38427C412922A2CD004FDCA8 /* ScoreModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38427C402922A2CD004FDCA8 /* ScoreModel.swift */; };
 		38427C432922A30E004FDCA8 /* StoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38427C422922A30E004FDCA8 /* StoreManager.swift */; };
@@ -34,12 +43,18 @@
 /* Begin PBXFileReference section */
 		1F0CE322290C02610032EDEB /* String+Scores.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Scores.swift"; sourceTree = "<group>"; };
 		1F166F9F28FFE064004BD2B1 /* BlurView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BlurView.swift; path = GestureCat/Exstensions/BlurView.swift; sourceTree = SOURCE_ROOT; };
+		1F2A847D2B6BFDA700A23170 /* 89.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 89.json; sourceTree = "<group>"; };
+		1F2A847F2B6C036300A23170 /* MusicHelperGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicHelperGame.swift; sourceTree = "<group>"; };
 		1F431BD32949CA29009F09FB /* ScoreCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScoreCell.xib; sourceTree = "<group>"; };
 		1F431BD82949F9AD009F09FB /* MusikFon.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = MusikFon.mp3; sourceTree = "<group>"; };
+		1F5D11722B6BEEBA00661A25 /* button.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = button.mp3; sourceTree = "<group>"; };
+		1F5D11762B6BF7E300661A25 /* over.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = over.mp3; sourceTree = "<group>"; };
+		1F5D11782B6BF88100661A25 /* musicGame.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = musicGame.mp3; sourceTree = "<group>"; };
 		1F6BBDE5292810A5003CEE2B /* ScoresViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoresViewController.swift; sourceTree = "<group>"; };
 		1F6BBDE7292813C9003CEE2B /* ScoreCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreCell.swift; sourceTree = "<group>"; };
 		1F6BBDEB292A4F76003CEE2B /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		1F6BBDED292A5DC0003CEE2B /* ScoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreViewController.swift; sourceTree = "<group>"; };
+		1F7203422B640FA100D48FF2 /* f7ba78d7-b1de-4790-a81e-9d78a42c6731.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "f7ba78d7-b1de-4790-a81e-9d78a42c6731.json"; sourceTree = "<group>"; };
 		1FA32E05292FD778003BAA03 /* hrums.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = hrums.mp3; sourceTree = "<group>"; };
 		1FA32E0929300366003BAA03 /* MusicHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicHelper.swift; sourceTree = "<group>"; };
 		1FA32E0B29300B30003BAA03 /* MusicSound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicSound.swift; sourceTree = "<group>"; };
@@ -53,6 +68,8 @@
 		1FCE36F828EAE18A000BFEC4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1FCE36FA28EAE18A000BFEC4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1FCE370228EAE2AA000BFEC4 /* TitleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleViewController.swift; sourceTree = "<group>"; };
+		1FE3FD1F2B6BBE72008CAE7F /* cup.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = cup.json; sourceTree = "<group>"; };
+		1FE3FD232B6BC098008CAE7F /* sett.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = sett.json; sourceTree = "<group>"; };
 		37BC2DBB1A94E3D7DF666532 /* Pods-GestureCat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GestureCat.release.xcconfig"; path = "Target Support Files/Pods-GestureCat/Pods-GestureCat.release.xcconfig"; sourceTree = "<group>"; };
 		38427C402922A2CD004FDCA8 /* ScoreModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreModel.swift; sourceTree = "<group>"; };
 		38427C422922A30E004FDCA8 /* StoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreManager.swift; sourceTree = "<group>"; };
@@ -66,6 +83,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F6AAD3A018BB78F9F23EF422 /* Pods_GestureCat.framework in Frameworks */,
+				1F2D52232B585D4D004E562A /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,8 +94,12 @@
 			isa = PBXGroup;
 			children = (
 				1FA32E0929300366003BAA03 /* MusicHelper.swift */,
+				1F2A847F2B6C036300A23170 /* MusicHelperGame.swift */,
 				1FA32E0B29300B30003BAA03 /* MusicSound.swift */,
 				1FA32E05292FD778003BAA03 /* hrums.mp3 */,
+				1F5D11762B6BF7E300661A25 /* over.mp3 */,
+				1F5D11782B6BF88100661A25 /* musicGame.mp3 */,
+				1F5D11722B6BEEBA00661A25 /* button.mp3 */,
 				1F431BD82949F9AD009F09FB /* MusikFon.mp3 */,
 			);
 			path = Music;
@@ -156,6 +178,10 @@
 		1FCE36EB28EAE189000BFEC4 /* GestureCat */ = {
 			isa = PBXGroup;
 			children = (
+				1F7203422B640FA100D48FF2 /* f7ba78d7-b1de-4790-a81e-9d78a42c6731.json */,
+				1F2A847D2B6BFDA700A23170 /* 89.json */,
+				1FE3FD1F2B6BBE72008CAE7F /* cup.json */,
+				1FE3FD232B6BC098008CAE7F /* sett.json */,
 				1F431BD72949D239009F09FB /* MenuGames */,
 				1F431BD62949D10A009F09FB /* Exstensions */,
 				1F431BD42949CEED009F09FB /* ScoreGames */,
@@ -202,6 +228,9 @@
 			dependencies = (
 			);
 			name = GestureCat;
+			packageProductDependencies = (
+				1F2D52222B585D4D004E562A /* Lottie */,
+			);
 			productName = GestureCat;
 			productReference = 1FCE36E928EAE189000BFEC4 /* GestureCat.app */;
 			productType = "com.apple.product-type.application";
@@ -230,6 +259,9 @@
 				Base,
 			);
 			mainGroup = 1FCE36E028EAE189000BFEC4;
+			packageReferences = (
+				1F2D52212B585D4D004E562A /* XCRemoteSwiftPackageReference "lottie-spm" */,
+			);
 			productRefGroup = 1FCE36EA28EAE189000BFEC4 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -244,10 +276,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F2A847E2B6BFDA700A23170 /* 89.json in Resources */,
 				1FCE36F928EAE18A000BFEC4 /* LaunchScreen.storyboard in Resources */,
+				1F5D11772B6BF7E400661A25 /* over.mp3 in Resources */,
+				1F5D11792B6BF88100661A25 /* musicGame.mp3 in Resources */,
 				1FCE36F628EAE18A000BFEC4 /* Assets.xcassets in Resources */,
+				1FE3FD242B6BC098008CAE7F /* sett.json in Resources */,
+				1F5D11732B6BEEBA00661A25 /* button.mp3 in Resources */,
 				1FA32E06292FD778003BAA03 /* hrums.mp3 in Resources */,
 				1FCE36F428EAE189000BFEC4 /* Main.storyboard in Resources */,
+				1F7203432B640FA100D48FF2 /* f7ba78d7-b1de-4790-a81e-9d78a42c6731.json in Resources */,
+				1FE3FD202B6BBE72008CAE7F /* cup.json in Resources */,
 				1FF2AD072B3C5437003C9244 /* ScoreCell.xib in Resources */,
 				1F431BD92949F9AD009F09FB /* MusikFon.mp3 in Resources */,
 			);
@@ -313,6 +352,7 @@
 				1FCE36ED28EAE189000BFEC4 /* AppDelegate.swift in Sources */,
 				38427C412922A2CD004FDCA8 /* ScoreModel.swift in Sources */,
 				38427C432922A30E004FDCA8 /* StoreManager.swift in Sources */,
+				1F2A84802B6C036300A23170 /* MusicHelperGame.swift in Sources */,
 				1FCE36EF28EAE189000BFEC4 /* SceneDelegate.swift in Sources */,
 				1F6BBDE9292813C9003CEE2B /* ScoreCell.swift in Sources */,
 				1F0CE323290C02610032EDEB /* String+Scores.swift in Sources */,
@@ -470,8 +510,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -499,8 +538,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -536,6 +574,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1F2D52212B585D4D004E562A /* XCRemoteSwiftPackageReference "lottie-spm" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-spm.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.3.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1F2D52222B585D4D004E562A /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1F2D52212B585D4D004E562A /* XCRemoteSwiftPackageReference "lottie-spm" */;
+			productName = Lottie;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1FCE36E128EAE189000BFEC4 /* Project object */;
 }
